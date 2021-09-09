@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/play_now"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="?colorControlNormal"
+            app:backgroundTint="?colorSurface"
+            app:elevation="0dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/ic_play"
+            app:iconSize="16dp"
+            app:iconTint="?colorControlNormal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/add_to_likes"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="?colorControlNormal"
+            app:backgroundTint="?colorSurface"
+            app:elevation="0dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/ic_facebook_like"
+            app:iconSize="16dp"
+            app:iconTint="?colorControlNormal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/view_album"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="?colorControlNormal"
+            app:backgroundTint="?colorSurface"
+            app:elevation="0dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/ic_music_record"
+            app:iconSize="16dp"
+            app:iconTint="?colorControlNormal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/go_to_artist"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="?colorControlNormal"
+            app:backgroundTint="?colorSurface"
+            app:elevation="0dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/ic_microphone"
+            app:iconSize="16dp"
+            app:iconTint="?colorControlNormal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/song_info"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="?colorControlNormal"
+            app:backgroundTint="?colorSurface"
+            app:elevation="0dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/ic_info"
+            app:iconSize="16dp"
+            app:iconTint="?colorControlNormal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/edit"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="?colorControlNormal"
+            app:backgroundTint="?colorSurface"
+            app:elevation="0dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/ic_edit"
+            app:iconSize="16dp"
+            app:iconTint="?colorControlNormal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/delete"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="?colorControlNormal"
+            app:backgroundTint="?colorSurface"
+            app:cornerRadius="0dp"
+            app:elevation="0dp"
+            app:icon="@drawable/ic_delete"
+            app:iconSize="16dp"
+            app:iconTint="?colorControlNormal" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

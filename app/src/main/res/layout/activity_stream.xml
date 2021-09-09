@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context=".stream.StreamActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?cardBackgroundColor"
+                android:elevation="8dp"
+                android:paddingTop="24dp"
+                android:paddingBottom="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:text="@string/online_content"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="?android:textColorSecondary"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/ic_search"
+                        android:background="@drawable/shape_circle"
+                        android:backgroundTint="@color/lime"
+                        app:tint="@color/white"
+                        android:padding="10dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/ic_music_notation"
+                        android:background="@drawable/shape_circle"
+                        android:backgroundTint="@color/red"
+                        app:tint="@color/white"
+                        android:padding="10dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playlists"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/ic_facebook_like"
+                        android:background="@drawable/shape_circle"
+                        android:backgroundTint="@color/teal_200"
+                        app:tint="@color/white"
+                        android:padding="10dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/liked"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/recently_added"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="156dp"
+                tools:itemCount="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:insetTop="2dp"
+                android:insetBottom="2dp"
+                android:text="@string/view_all"
+                android:minWidth="96dp"
+                android:layout_gravity="end"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/ic_forward"
+                app:iconGravity="end"
+                app:iconSize="16dp"
+                app:rippleColor="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/categories"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="156dp"
+                tools:itemCount="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:insetTop="2dp"
+                android:insetBottom="2dp"
+                android:text="@string/view_all"
+                android:minWidth="96dp"
+                android:layout_gravity="end"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/ic_forward"
+                app:iconGravity="end"
+                app:iconSize="16dp"
+                app:rippleColor="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/artists"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="156dp"
+                tools:itemCount="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:insetTop="2dp"
+                android:insetBottom="2dp"
+                android:text="@string/view_all"
+                android:minWidth="96dp"
+                android:layout_gravity="end"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/ic_forward"
+                app:iconGravity="end"
+                app:iconSize="16dp"
+                app:rippleColor="@color/white" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        layout="@layout/now_playing_layout"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/main_menu" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

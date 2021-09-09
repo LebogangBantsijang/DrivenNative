@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_pavilion"
+        android:title="@string/home" />
+    <item
+        android:icon="@drawable/ic_musical_notes"
+        android:title="@string/local" />
+    <item
+        android:icon="@drawable/ic_spotify"
+        android:title="@string/other" />
+    <item
+        android:icon="@drawable/ic_music_library"
+        android:title="@string/stream" />
+    <item
+        android:icon="@drawable/ic_services"
+        android:title="@string/settings" />
+</menu>

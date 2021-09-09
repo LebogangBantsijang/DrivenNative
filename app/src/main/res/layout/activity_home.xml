@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:gravity="bottom">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollIndicators="right"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?cardBackgroundColor"
+                android:elevation="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="24dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="8dp"
+                android:text="@string/welcome"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textStyle="bold" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:text="@string/on_device"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Dark">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.3"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@raw/image_one" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/home_gradient_one"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/on_device"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null"
+                    app:icon="@drawable/ic_musical_notes"
+                    app:iconGravity="textTop"
+                    app:iconSize="56dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:text="@string/on_device"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Dark">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.3"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@raw/image_three" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/home_gradient_two"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/charts"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null"
+                    app:icon="@drawable/ic_spotify"
+                    app:iconGravity="textTop"
+                    app:iconSize="56dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:text="@string/on_device"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Dark">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.3"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@raw/image_four" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/home_gradient_three"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/stream"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null"
+                    app:icon="@drawable/ic_music_library"
+                    app:iconGravity="textTop"
+                    app:iconSize="56dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:text="@string/on_device"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Dark">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.3"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@raw/image_two" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/home_gradient_four"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/settings"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                    android:textStyle="bold"
+                    app:icon="@drawable/ic_services"
+                    app:iconGravity="textTop"
+                    app:iconSize="56dp" />
+
+            </FrameLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        layout="@layout/now_playing_layout"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/main_menu" />
+
+</LinearLayout>
