@@ -56,6 +56,7 @@
             android:textColor="?android:textColorSecondaryInverseNoDisable"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -78,8 +79,10 @@
             app:startIconTint="@color/primaryColor">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textview.MaterialTextView
@@ -91,6 +94,7 @@
             android:textColor="?android:textColorSecondaryInverseNoDisable"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -113,6 +117,7 @@
             app:startIconTint="@color/primaryColor">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -126,6 +131,7 @@
             android:textColor="?android:textColorSecondaryInverseNoDisable"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordOtherInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -148,12 +154,14 @@
             app:startIconTint="@color/primaryColor">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordOtherEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"

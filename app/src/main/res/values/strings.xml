@@ -58,4 +58,7 @@
     <string name="edit">Edit</string>
     <string name="invalid_input">Invalid Input</string>
     <string name="failed_to_authenticate">Failed to authenticate</string>
+    <string name="password_criteria">Your password must: \n - Have at least one number \n - Have at least one Uppercase character \n- Have at least one Lower case character \n - Be at least 8 characters long \n - Both passwords must match</string>
+    <string name="close">Close</string>
+    <string name="okay">Okay</string>
 </resources>
