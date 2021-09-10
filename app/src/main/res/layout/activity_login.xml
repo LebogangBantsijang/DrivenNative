@@ -77,8 +77,10 @@
             app:startIconTint="@color/primaryColor">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textview.MaterialTextView
@@ -112,11 +114,13 @@
             app:startIconTint="@color/primaryColor">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/forgotPasswordButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/forgot_password"
@@ -128,6 +132,7 @@
             android:layout_marginBottom="8dp"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -151,6 +156,7 @@
             android:layout_marginBottom="8dp"/>
 
         <ImageView
+            android:id="@+id/googleButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -160,10 +166,12 @@
             android:backgroundTint="?colorButtonNormal"/>
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/goToRegisterView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:padding="4dp"
+            android:background="?selectableItemBackground"
             android:orientation="horizontal"
             android:layout_marginBottom="16dp">
 

@@ -169,23 +169,6 @@
             app:cornerRadius="16dp"
             app:rippleColor="@color/white" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/or_login_using"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="8dp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:contentDescription="@string/app_name"
-            android:layout_marginBottom="24dp"
-            app:srcCompat="@drawable/ic_google"
-            android:background="@drawable/shape_circle"
-            android:backgroundTint="?colorButtonNormal"/>
-
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.core.widget.NestedScrollView>

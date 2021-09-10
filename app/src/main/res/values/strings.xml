@@ -56,4 +56,6 @@
     <string name="song_info">Song Info</string>
     <string name="delete">Delete</string>
     <string name="edit">Edit</string>
+    <string name="invalid_input">Invalid Input</string>
+    <string name="failed_to_authenticate">Failed to authenticate</string>
 </resources>
