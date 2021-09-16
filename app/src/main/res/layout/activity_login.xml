@@ -5,6 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical"
     tools:context=".signin.LoginActivity"
     android:fillViewport="true">
 
@@ -25,6 +28,7 @@
             android:layout_gravity="center_horizontal"
             android:contentDescription="@string/app_name"
             android:scaleType="center"
+            android:minHeight="126dp"
             app:tint="@color/primaryColor"
             app:srcCompat="@drawable/ic_signin" />
 

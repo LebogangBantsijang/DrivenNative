@@ -5,6 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical"
     tools:context=".signin.LoginActivity"
     android:fillViewport="true">
 
@@ -18,12 +21,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            app:navigationIcon="@drawable/ic_left" />
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:minHeight="156dp"
             android:contentDescription="@string/app_name"
             android:scaleType="center"
             app:tint="@color/primaryColor"

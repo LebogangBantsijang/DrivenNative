@@ -23,21 +23,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?cardBackgroundColor"
-                android:elevation="8dp"
-                android:paddingStart="8dp"
-                android:paddingTop="24dp"
-                android:paddingEnd="0dp"
-                android:paddingBottom="8dp"
-                android:text="@string/welcome"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                android:textStyle="bold" />
-
-
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="156dp"
