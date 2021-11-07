@@ -1,5 +1,6 @@
 package com.lebogang.driven.device.database.models
 
+import android.net.Uri
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -15,5 +16,5 @@ data class Music(
     val duration:Long,
     val size:Long,
     val date:Long,
-    val cover:String,
-    val uri:String)
+    val cover: Uri,
+    val uri:Uri)

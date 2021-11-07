@@ -16,28 +16,36 @@ interface AlbumAccess {
     fun getAlbums():PagingSource<Int,Album>
 
     /**
+     * Get album with the given id
+     * This will be used for view song album option.
+     * We'll pause the main thread and proceed when finished
+     * */
+    @Query("SELECT * FROM album WHERE id =:id")
+    fun getAlbum(id:Long):Album
+
+    /**
      * Add album
      * */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun addAlbum(album: Album)
+    fun addAlbum(album: Album):Int
 
     /**
      * Add albums that are in the list
      * */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun addAlbums(albums: List<Album>)
+    fun addAlbums(albums: List<Album>):Int
 
     /**
      * Remove albums that are in the list
      * */
     @Delete
-    fun removeAlbum(albums:List<Album>)
+    fun removeAlbum(albums:List<Album>):Int
 
     /**
      * Remove album
      * */
     @Delete
-    fun removeAlbum(album: Album)
+    fun removeAlbum(album: Album):Int
 
     /**
      * Reset the table

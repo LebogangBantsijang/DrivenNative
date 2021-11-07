@@ -15,7 +15,7 @@ interface PlaylistAccess {
     fun getPlaylist():PagingSource<Int,Playlist>
 
     @Query("SELECT musicId FROM PlaylistBridge WHERE playlistId =:playlistId")
-    suspend fun getMusicIds(playlistId:Int):List<Long>
+    fun getMusicIds(playlistId:Int):List<Long>
 
     /**
      * Add new playlist

@@ -8,7 +8,7 @@ import androidx.room.Query
 import com.lebogang.driven.device.database.models.Music
 
 interface MusicAccess {
-    // add search
+
     /**
      * Get all songs
      * */
@@ -20,6 +20,12 @@ interface MusicAccess {
      * */
     @Query("SELECT * FROM Music WHERE id IN(:id) ORDER BY title ASC")
     fun getMusic(id:List<Long>):PagingSource<Int,Music>
+
+    /**
+     * Get Songs with a title that matches the one in the parameters
+     * */
+    @Query("SELECT * FROM Music WHERE title =:title ORDER BY title ASC")
+    fun getMusic(title:String):PagingSource<Int,Music>
 
     /**
      * Get songs with an album id that matches the one in the params
@@ -37,25 +43,25 @@ interface MusicAccess {
      * Add music
      * */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun addMusic(music: Music)
+    fun addMusic(music: Music):Int
 
     /**
      * Add music
      * */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun addMusic(music:List<Music>)
+    fun addMusic(music:List<Music>):Int
 
     /**
      * Remove music
      * */
     @Delete
-    fun removeMusic(music: Music)
+    fun removeMusic(music: Music):Int
 
     /**
      * Remove music
      * */
     @Delete
-    fun removeMusic(music: List<Music>)
+    fun removeMusic(music: List<Music>):Int
 
     /**
      * Reset the table

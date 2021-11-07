@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:background="@null"
         app:title="@string/settings"
-        app:navigationIcon="@drawable/ic_left"
+        app:navigationIcon="@drawable/ic_round_arrow_back_24"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
 </androidx.appcompat.widget.LinearLayoutCompat>

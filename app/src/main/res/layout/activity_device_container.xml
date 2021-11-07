@@ -57,14 +57,17 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
-                android:background="?selectableItemBackground"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/shape_circle"
                 android:contentDescription="@string/app_name"
-                android:padding="10dp"
-                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:src="@drawable/ic_round_arrow_back_24"
+                android:padding="9dp"
+                app:background="@drawable/shape_circle"
+                app:backgroundTint="#811B1A1A"
                 app:borderWidth="0dp"
                 app:tint="@color/white" />
+
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>

@@ -24,14 +24,16 @@ abstract class DrivenDatabase: RoomDatabase() {
     abstract fun getAlbumAccess():AlbumAccess
     abstract fun getArtistAccess():ArtistAccess
     abstract fun getCategoryAccess():CategoryAccess
-    abstract fun PlaylistAccess():PlaylistAccess
+    abstract fun getPlaylistAccess():PlaylistAccess
 
-    /**
-     * Honestly I am not sure it this is gonna work but anyway.
-     * */
     companion object Helper{
-        //don't remember but fuck it
+        @Volatile
         private var database:DrivenDatabase? = null
+        /**
+         * Get/Create the Database
+         * @param context
+         * @return #DrivenDatabase
+         * */
         fun getDatabase(context: Context):DrivenDatabase{
             return database?: synchronized(this){
                 val newDatabase = Room.databaseBuilder(context,DrivenDatabase::class.java,"Driven")
